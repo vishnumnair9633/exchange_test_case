@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+        <record id="refund_product" model="product.product">
+            <field name="name">Refund Product</field>
+            <!-- <field name="categ_id" ref="product.product_category_5"/> -->
+            <field name="standard_price">0</field>
+            <field name="list_price">0</field>
+            <field name="type">product</field>
+            <field name="uom_id" ref="uom.product_uom_unit"/>
+            <field name="uom_po_id" ref="uom.product_uom_unit"/>
+            <field name="description">Product for refund invoice</field>
+            <field name="is_refund">True</field>
+        </record>
+        <record id="exchange_product" model="product.product">
+            <field name="name">Exchange Product</field>
+            <!-- <field name="categ_id" ref="product.product_category_5"/> -->
+            <field name="standard_price">0</field>
+            <field name="list_price">0</field>
+            <field name="type">product</field>
+            <field name="uom_id" ref="uom.product_uom_unit"/>
+            <field name="uom_po_id" ref="uom.product_uom_unit"/>
+            <field name="description">Product for exchange invoice</field>
+            <field name="is_exchange">True</field>
+        </record>
+</odoo>
